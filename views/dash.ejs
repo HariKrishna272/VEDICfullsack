@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/67cf5822e8.js" crossorigin="anonymous"></script>
+   <style>
+        @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+        #navItem1 {
+            color: #323f4b;
+            font-family: "Roboto";
+        }
+
+        #navItem2 {
+            color: #323f4b;
+            font-family: "Roboto";
+        }
+
+        #navItem3 {
+            color: #323f4b;
+            font-family: "Roboto";
+        }
+
+        #navItem4 {
+            color: #323f4b;
+            font-family: "Roboto";
+        } 
+        #navItem5{
+            border-radius: 50px;
+            background: #01bf71;
+            padding: 10px 22px;
+            color: #010606;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+
+        }
+        .image1{
+            height:100px;
+            width:100px;
+        }
+        .VideoBg{
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            background: #232a34;
+}
+        .banner-heading {
+            color: white;
+            font-family: "Roboto";
+            font-size: 45px;
+            font-weight: 800;
+        }
+
+        .banner-caption {
+            color: #f5f7fa;
+            font-family: "Roboto";
+            font-size: 24px;
+            font-weight: 800;
+        }   
+
+        .custom-button {
+            color: white;
+            background-color:#01bf71;;
+            width: 130px;
+            height: 45px;
+            border-width: 0;
+            border-radius: 8px;
+            margin-right: 10px;
+}
+        .hostel-header{
+            position:absolute;
+            top:300px;
+            left:500px;
+        }
+        .image2 {
+            height: 200px;
+        }
+
+        .heading {
+            font-family: 'Bree Serif', serif;
+            font-size: 24px;
+            color: #01bf71;
+            font-weight: bold;
+        }
+
+        .head1 {
+            font-weight: bold;
+            font-family: 'Bree Serif', serif;
+            font-size: 30px;
+        }
+
+        .button {
+            color: white;
+            background-color: #01bf71;
+            width: 130px;
+            height: 45px;
+            border-width: 0;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .para1 {
+            font-family: 'Bree Serif', serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .vr-website-footer-section {
+            background-color: #19232d;
+            background-size: cover;
+        }
+
+        .image3 {
+            height: 120px;
+            width: 50px;
+        }
+
+        .card-container {
+            width: 50px;
+            height: 50px;
+            padding-left: 15px;
+            padding-top: 15px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            background-color: #202b36;
+            border-radius: 40px;
+            margin-bottom: 8px;
+            margin-right: 8px;
+        }
+
+        .icon {
+            color: #5a7184;
+            font-size: 20px;
+        }
+
+        .para {
+            color: #5a7184;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "Roboto";
+            margin-bottom: 5px;
+        }
+
+        .heading2 {
+            color: #5a7184;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: "Roboto";
+        }
+
+        .vr-section {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+
+        .line {
+            background-color: #5a7184;
+        }
+
+        .para3 {
+            color: #959ead;
+            font-family: "Roboto";
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .vr-cont{
+            color:white;
+            font-weight:bold;
+        }
+        .vr-cout1{
+            color:white
+        }
+
+        
+    </style>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">&nbsp;<img src="https://www.srivishnu.edu.in/wp-content/uploads/2018/07/logo.png" class="image1 w-100"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav m-auto">
+                            <a class="nav-link active" href="#About" id="navItem1">About &nbsp;&nbsp;&nbsp; <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#Pricing" id="navItem2"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Pricing</a>
+                            <a class="nav-link" href="#Contact" id="navItem3"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Contact</a>
+                            <a class="nav-link" href="/login" id="navItem4"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Sign in</a>
+                        </div>
+                    </div>
+                    <div class="ml-auto">
+                        <a class="nav-link" href="/login" id="navItem5">Signup</a> 
+                    </div>
+            </div>
+        </nav>
+        <div>
+            <div>
+                <video muted autoplay="autoplay" loop class="VideoBg">
+                    <!-- <source src="/views/vishnu.mp4" type="video/mp4"> -->
+                    <source src="vishnu.mp4" type="video/mp4">
+
+                </video>
+            </div>
+            <div class="d-flex justify-content-center flex-column hostel-header">
+                <div class="text-center">
+                    <h1 class="banner-heading mb-3">HOSTEL MANAGEMENT SYSTEM</h1>
+                    <p class="banner-caption mb-4">VIT BHIMAVARAM</p>
+                    <button class="custom-button">Get Started</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="pt-3 pb-3 bg-light" id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://media.istockphoto.com/id/182498079/photo/youth-hostel-dorm-room.jpg?s=612x612&w=0&k=20&c=HDbm6aOu-IxfLkU47lEQ9aBkDBGijPjtzokB74J5AMw=" class="image2 w-100">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="heading">WORLD CLASS FACILITIES</h3>
+                        <h1 class="head1">Best Facilities with less prices</h1>
+                        <p class="para1">Cherish your hostel life with our hostlers.</p>
+                        <button class="button">Get started</button>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h3 class="heading">BEST FOOD</h3>
+                        <h1 class="head1">Unlimited varieties of dishes</h1>
+                        <p class="para1">Taste dishes from across the world.</p>
+                        <button class="button">Get started</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://images.collegedunia.com/public/college_data/images/campusimage/1614236225Mess.jpg" class="image2 w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vr-website-footer-section pt-5 pb-5" id="Contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="text-center">
+                            <img src="https://www.srivishnu.edu.in/wp-content/uploads/2018/07/logo.png" class="image3 w-50">
+                            <div class="d-flex flex-row justify-content-center mt-3 mb-3">
+                                <div class="card-container">
+                                    <a href="https://vishnu.edu.in/"><i class="fa-brands fa-google icon"></i></a>
+                                </div>
+                                <div class="card-container">
+                                    <a href="https://www.linkedin.com/school/vitbhimavaram/"><i class="fa-brands fa-instagram icon"></i></a>
+                                </div>
+                                <div class="card-container">
+                                    <a href="https://www.linkedin.com/school/vitbhimavaram/"><i class="fa-brands fa-linkedin icon"></i></a>
+                                </div>
+                            </div>
+                            <p class="para"></p>
+                        </div>
+    
+                    </div>
+                    <div class="col-12 col-md-4 mt-3">
+                        <h1 class="heading2 pb-3"></h1>
+                        <ul class="vr-section">
+                            <a href="#About" class="vr-cont"><li class="para">About Us</li></a>
+                            <a href="#" class="vr-cout1"><li class="para">Developers</li></a>
+                            <a href="#" class="vr-cout1"><li class="para">Services</li></a>
+                            <a href="pricinng3.html" class="vr-count-1"><li class="para">Pricing</li></a>
+                            <a href="/adlog" class="vr-count-1"><li class="para"> Admin login</li></a>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 mt-3">
+                        <h1 class="heading2 mb-3"> Contact Us</h1>
+                        <ul class="vr-section">
+                            <li class="mb-3">
+                                <i class="fa fa-envelope icon mr-2"></i>
+                                <span class="para">21pa1a12a9@vishnu.edu.in</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-phone-alt icon mr-2"></i>
+                                <span class="para">8186810216</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fab fa-skype icon mr-2"></i>
+                                <span class="para">Hari Krishna</span>
+                            </li>
+    
+                        </ul>
+                    </div>
+                    
+                </div>
+                <hr class="line">
+                <div class="text-center">
+                    <i class="fas fa-copyright icon" aria-hidden="true"></i>
+                    <span class="para3">VIT BHIMAVARAM</span>
+                </div>
+    
+    
+            </div>
+    
+        </div>
+</body>
+</html>

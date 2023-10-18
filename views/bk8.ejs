@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .signup-container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      width: 400px;
+      box-shadow: 0 0 10000px rgba(1, 67, 249, 0.1);
+    }
+
+    .signup-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      width: 40%;
+      text-align: right;
+      margin-right: 20px;
+    }
+
+    .form-group input, .form-group select {
+      width: 60%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .gender-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .gender-group label {
+      margin-right: 10px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .button-group button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button-group button#goback {
+      background-color: #ccc;
+      color: #fff;
+    }
+
+    .button-group button#register {
+      background-color: #01bf71;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-container">
+  <form action="/108" method="post">
+<div class="signup-container">
+  <h1> Room Booking</h1>
+
+  <div class="form-group">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="regno">Registration Number:</label>
+    <input type="text" id="regno" name="regno" required>
+  </div>
+  <div class="button-group">
+    <center><button id="register">Book Room</button></center>
+  </div>
+  <P><%= b %></P>
+</form>
+</div>
+</div>
+
+</body>
+</html>

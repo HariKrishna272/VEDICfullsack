@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Notice Board</title>
+	<style>
+		.notice-board {
+			width: 300px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 2px solid #333;
+			border-radius: 10px;
+			background-color: #f0f0f0;
+            position: relative;
+            top: 100px;
+
+          
+		}
+
+		.notice-title {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.tiffin-section {
+			margin-top: 20px;
+			font-weight: bold;
+		}
+
+		fieldset {
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="notice-board">
+		<div class="notice-title">Notice Board</div>
+		<div class="tiffin-section">MENU</div>
+		<fieldset>
+			<legend>Today's Menu</legend>
+			<ul>
+				<li>Dish 1: <%= menu.dish1 %></li>
+				<li>Dish 2: <%= menu.dish2 %></li>
+				<li>Dish 3: <%= menu.dish3 %></li>
+                <li>Dish 4: <%= menu.dish4 %></li>
+			</ul>
+		</fieldset>
+	</div>
+</body>
+</html>

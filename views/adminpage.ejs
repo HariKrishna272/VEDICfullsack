@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+        .image1{
+            height:100px;
+            width:100px;
+        }
+        #navItem2{
+            color:whitesmoke;
+        }
+        #navItem5{
+            border-radius: 50px;
+            background: #01bf71;
+            padding: 10px 22px;
+            color: #010606;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            text-decoration: none;
+        }
+        .bg-container{
+            background-color: #01060646;
+            height:300px;
+        }
+        .technology-image {
+            width: 40vw;
+            margin: 5px;
+        }
+        .card-container1{
+            background-color:rgba(0, 0, 0, 0.886);
+            height:200px;
+            margin-top:160px;
+            border-radius:8px;
+            width:200px;
+            text-align:center;
+        }
+        .card-container2{
+            background-color:rgba(0, 0, 0, 0.886);
+            height:200px;
+            margin-top:160px;
+            border-radius:8px;
+            width:200px;
+            text-align:center;
+        }
+        .card-container3{
+            background-color:rgba(0, 0, 0, 0.886);
+            height:200px;
+            margin-top:160px;
+            border-radius:8px;
+            width:200px;
+            text-align:center
+        }
+        .card-container4{
+            background-color:rgba(0, 0, 0, 0.886);
+            height:200px;
+            margin-top:160px;
+            border-radius:8px;
+            width:200px;
+            text-align:center
+        }
+        .para{
+            font-family:Bree serif;
+            color:white;
+        }
+        .vr-link{
+            font-size:70px;
+        }
+        .vr-link1{
+            font-size:70px;
+        }
+        .vr-link2{
+            font-size:70px;
+        }
+        .vr-link3{
+            font-size:70px;
+        }
+        .container4{
+            height:500px;
+        }
+        .card-container1:hover, 
+        .card-container2:hover, 
+        .card-container3:hover,
+        .card-container4:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .d-flex .card-container1,
+    .d-flex .card-container2,
+    .d-flex .card-container3,
+    .d-flex .card-container4 {
+        margin: 0 10px; 
+        margin-top:180px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#"><img src="https://www.srivishnu.edu.in/wp-content/uploads/2018/07/logo.png" class="image1 ml-5"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav m-auto">
+              <a class="nav-link" href="#" id="navItem2">Welcome </a>
+            </div>
+            <div class="ml-auto">
+                <a class="nav-link" href="home1.html" id="navItem5">Logout</a> 
+            </div>
+          </div>
+        
+      </nav>
+      <div class="bg-container">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="card-container1">
+                <a href="/sirs" class="vr-link"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></a>
+                <p class="para"> Processing Outing</p>
+            </div>
+            <div class="card-container2">
+                <a href="/update" class="vr-link1"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+                    <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+                  </svg></a>
+            
+                <p class="para"> Today's Menu</p>
+            </div>
+        </div>
+      </div>
+      <div class="bg-dark">
+        <div class="container4">
+
+        </div>
+      </div>
+</body>
+</html>

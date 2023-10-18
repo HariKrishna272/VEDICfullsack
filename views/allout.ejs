@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outing Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Room Number</th>
+                <th>Date and Time of Outing</th>
+                <th>Purpose</th>
+                
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% outingDetails.forEach(outing => { %>
+                <tr>
+                    <td><%= outing.name %></td>
+                    <td><%= outing.roomno %></td>
+                    <td><%= outing.date %></td>
+                    <td><%= outing.purpose %></td>
+                    
+                    <td><%= outing.status %></td>
+                    <td>
+                        <% if (outing.status !== 'Accepted' && outing.status !== 'Rejected') { %>
+                            <button onclick="accept('<%= outing.id %>')">Accept</button>
+                            <button onclick="reject('<%= outing.id %>')">Reject</button>
+                        <% } else { %>
+                            <span>Already Processed</span>
+                        <% } %>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+    <script>
+        function accept(id) {
+            fetch(`/accept/${id}`, { method: 'POST' })
+                .then(response => response.json())
+                .then(data => console.log(data.message))
+                .catch(error => console.error(error));
+        }
+
+        function reject(id) {
+            fetch(`/reject/${id}`, { method: 'POST' })
+                .then(response => response.json())
+                .then(data => console.log(data.message))
+                .catch(error => console.error(error));
+        }
+        function reloadPage() {
+            location.reload(); 
+        }
+
+
+        setInterval(reloadPage, 2000);
+    </script>
+</body>
+</html>

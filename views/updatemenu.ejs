@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tiffin Order Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      width: 400px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      margin-right: 10px;
+    }
+
+    .button-group button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button-group button#submit {
+      background-color: #01bf71;
+      color: #fff;
+    }
+
+    .form-group input {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h1>menu</h1>
+   <form action="/update" method="post">
+  <div class="form-group">
+    <label for="dish1">Dish 1:</label>
+    <input type="text" id="dish1" name="dish1">
+  </div>
+
+  <div class="form-group">
+    <label for="dish2">Dish 2:</label>
+    <input type="text" id="dish2" name="dish2">
+  </div>
+
+  <div class="form-group">
+    <label for="dish3">Dish 3:</label>
+    <input type="text" id="dish3" name="dish3">
+  </div>
+
+  <div class="form-group">
+    <label for="dish4">Dish 4:</label>
+    <input type="text" id="dish4" name="dish4">
+  </div>
+
+  <div class="button-group">
+    <button id="submit">Submit</button>
+    <br>
+    <p><%=u%></p>
+  </div>
+</form>
+</div>
+
+</body>
+</html>
